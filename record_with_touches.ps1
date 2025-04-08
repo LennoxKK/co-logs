@@ -1,20 +1,26 @@
-<#
-.SYNOPSIS
-Android Screen Recorder with Touch Indicators and Background Log Collection
-
-.DESCRIPTION
-This script:
-1. Records device screen with visible touch indicators
-2. Automatically saves recording to your computer
-3. Prompts user to start logs before recording for "dut" recordings
-4. Automatically collects available logs (debuglogger or ylog) in the background
-5. Provides clear status messages throughout the process
-6. Waits for device connection if no device is detected
-7. Opens the output folder when complete
-8. Centers ALL text and input fields on the screen
-9. Loops the process for continuous recording sessions even when recording a video not named as dut
-
-#>
+# =====================================================================
+# android_screen_recorder.ps1
+# =====================================================================
+# <DESCRIPTION>
+# Tool: Android Screen Recorder with Touch Indicators and Log Collection
+# Version: 1.0
+# Author: LKK
+# Date: April 7, 2025
+# Purpose: Record Android screen with touch indicators and collect logs
+# Requirements: ADB (Android Debug Bridge), PowerShell 5.0+
+# Usage: ./android_screen_recorder.ps1
+# Features: 
+#   - Records device screen with visible touch indicators
+#   - Automatically saves recording to your computer
+#   - Prompts user to start logs before recording for "dut" recordings
+#   - Automatically collects available logs (debuglogger or ylog) in the background
+#   - Provides clear status messages throughout the process
+#   - Waits for device connection if no device is detected
+#   - Opens the output folder when complete
+#   - Centers ALL text and input fields on the screen
+#   - Loops the process for continuous recording sessions even when recording a video not named as dut
+# </DESCRIPTION>
+# =====================================================================
 function Prompt-ContinueRecording {
     # Display prompt with centered formatting
     Write-Host ""

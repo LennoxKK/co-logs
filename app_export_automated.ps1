@@ -1,9 +1,20 @@
 # =====================================================================
 # app_export_automated.ps1
 # =====================================================================
-# Script to export the current foreground app from an Android device
-# Author: Claude
+# <DESCRIPTION>
+# Tool: Android App Export Tool
+# Version: 1.0
+# Author: LKK
 # Date: April 3, 2025
+# Purpose: Export the current foreground app from an Android device
+# Requirements: ADB (Android Debug Bridge), PowerShell 5.0+
+# Usage: Run the script and follow interactive prompts
+# Features: 
+#   - Auto-detection of foreground Android app
+#   - Support for split APKs and bundled apps
+#   - Multiple extraction methods including root fallback
+#   - User-friendly interface with progress indicators
+# </DESCRIPTION>
 # =====================================================================
 
 #region UI Functions
